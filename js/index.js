@@ -78,7 +78,12 @@ var resultArr_1 =[]
 
       ////////  判斷種類  ////////
       //印出兩種 2 2 1 // 印出一種 50 41 32 必贏
-      if (resultArr_1[0].score==2){
+      var two = resultArr_1[0].score
+      //萬一一二題連答一樣為 2 ，但 resultArr_1[1] 會未被定義 undefined
+      //所以要先預設定義 resultArr_1[1] == undefined
+      resultArr_1[1] == undefined
+        //resultArr_1[1] !== undefined 才算答完，才可進入迴圈印到 html
+        if (two ==2 && resultArr_1[1] !== undefined){
         $(".result").html(
           `<h2>
               你是 ${resultArr_1[0].name} ${resultArr_1[1].name} 人<br>
