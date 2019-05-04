@@ -101,11 +101,13 @@ button {
 }
 
 button:hover {
+  cursor: pointer;
   background-color: #4e52b7;
 }
 
 button::before {
   content: '';
+  cursor: pointer;
   position: absolute;
   top: -1px;
   left: 0;
@@ -122,10 +124,12 @@ button::before {
 button:hover::before {
   -webkit-transform: scale3d(1, 1, 1);
           transform: scale3d(1, 1, 1);
+  cursor: pointer;
 }
 
 button::after {
   content: '';
+  cursor: pointer;
   position: absolute;
   top: 0;
   left: 0;
@@ -142,12 +146,14 @@ button::after {
 button:hover::after {
   -webkit-transform: scale3d(1, 1, 1);
           transform: scale3d(1, 1, 1);
+  cursor: pointer;
 }
 
 .btn {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
+  cursor: pointer;
 }
 
 .btn::before {
@@ -159,6 +165,7 @@ button:hover::after {
   height: 5px;
   border-radius: 50%;
   background-color: white;
+  cursor: pointer;
 }
 
 .btn::after {
@@ -170,6 +177,7 @@ button:hover::after {
   height: 5px;
   border-radius: 50%;
   background-color: white;
+  cursor: pointer;
 }
 
 span.line::before {
@@ -181,6 +189,7 @@ span.line::before {
   height: 5px;
   border-radius: 50%;
   background-color: white;
+  cursor: pointer;
 }
 
 span.line::after {
@@ -192,6 +201,7 @@ span.line::after {
   height: 5px;
   border-radius: 50%;
   background-color: white;
+  cursor: pointer;
 }
 
 label {
@@ -219,6 +229,7 @@ label input {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  cursor: pointer;
 }
 
 .result {
