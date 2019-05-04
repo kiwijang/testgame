@@ -78,7 +78,7 @@ var resultArr_1 =[]
 
       ////////  判斷種類  ////////
       //印出兩種 2 2 1 // 印出一種 50 41 32 必贏
-      var two =resultArr_1[0].score==2 && resultArr_1[1].score==2
+      var two =resultArr_1[0].score==2
       if (two){
         $(".result").html(
           `<h2>
@@ -96,12 +96,8 @@ var resultArr_1 =[]
           <h2/>
           <input id="again" type="button" onclick="playAgain()" value="再玩一次">
           `)
-      }
-        
-        
+      }        
 }
-
-
 
 //再玩一次
 var playAgain = function(){
@@ -117,7 +113,7 @@ var playAgain = function(){
   changePage()
 }
 
-//再玩一次 重複按的值TMD不會輸入到 change 裡
+//再玩一次 重複按的值TMD不會輸入到 change 裡 -> 原因: 沒歸零 input 成 checked = false (為選取)，故使用 clearRadioGroup(GroupName) 解決
 
 function Clear()
 {    
