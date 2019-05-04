@@ -1,0 +1,185 @@
+html,body
+  margin: 0
+  padding: 0
+  display: flex
+  justify-content: center
+  align-items: top
+  background-color: #141444
+  color: white
+.pre
+  margin: 20px
+  width: 200px
+  h1
+    width: 200px
+.form
+  width: 100%
+  height: 100%
+h3,p
+  letter-spacing: 2px
+h3
+  font-size: 13px
+  padding: 3px 0
+  margin: 0
+  border-bottom: 1px solid white
+  font-weight: 400
+  opacity: 0.7
+p
+  font-size: 30px
+  margin: 10px 0 20px 0
+  text-align: center
+  font-weight: 700
+.qa_wrap
+  margin: 20px
+  padding: 50px
+  background-color: #ff8c84
+  border: 2px solid #707070
+  border-radius: 10px
+  box-shadow: 0px 10px 0 #707070
+  color: white
+  display: flex
+  flex-direction: column
+  display: none
+.add
+  display: flex !important
+button
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 0
+  margin: 15px auto
+  background-color: #6f72c4
+  color: white
+  box-sizing: border-box
+  width: 198px
+  height: 51px
+  border: 0
+  border: 1px solid #d3e3ea
+  position: relative
+  outline: none
+  transition: 0.3s
+  &:hover
+    background-color: darken(#6f72c4,9)
+  &::before
+    content: ''
+    position: absolute
+    top: -1px
+    left: 0
+    width: 100%
+    height: 99%
+    border-top: 1.5px solid white
+    border-bottom: 1.5px solid white
+    transition: 0.5s
+    transform: scale3d(0,1,1)
+  &:hover::before
+    transform: scale3d(1,1,1)
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 99%
+    height: 100%
+    border-left: 1.5px solid white
+    border-right: 1.5px solid white
+    transition: 0.5s
+    transform: scale3d(1,0,1)
+  &:hover::after
+    transform: scale3d(1,1,1)
+.btn
+  box-sizing: border-box
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    top: -3px
+    left: -1px
+    width: 5px
+    height: 5px
+    border-radius: 50%
+    background-color: white
+  &::after
+    content: ''
+    position: absolute
+    top: 95%
+    left: -1px
+    width: 5px
+    height: 5px
+    border-radius: 50%
+    background-color: white
+span.line
+  &::before
+    content: ''
+    position: absolute
+    top: -3px
+    left: 98%
+    width: 5px
+    height: 5px
+    border-radius: 50%
+    background-color: white
+  &::after
+    content: ''
+    position: absolute
+    top: 95%
+    left: 98%
+    width: 5px
+    height: 5px
+    border-radius: 50%
+    background-color: white
+label
+  font-size: 18px
+  letter-spacing: 4px
+  display: flex
+  justify-content: center
+  align-items: center
+  box-sizing: border-box
+  width: 199px
+  height: 49px
+  padding: 0
+  margin: 0
+  cursor: pointer
+  input
+    appearance: none
+
+.result
+  display: flex
+  flex-direction: column
+  margin: 50px
+  padding: 0
+  // border: 1px solid #000
+  display: none
+  color: grey
+.result h2
+    margin: 0
+    padding: 20px 20px 0px 20px
+    background-color: #fff
+.result h3
+    color: #bbb
+    margin: 0
+    padding: 5px 20px 10px 20px
+    border-bottom: 0px
+    opacity: 1
+    background-color: #fff
+input#again
+  background-color: #ea7272
+  border-radius: 5px
+  margin: 50px 0
+  font-size: 20px
+  letter-spacing: 5px
+  padding: 10px
+  width: 200px
+  height: 70px
+  color: white
+  border-top: 3px solid #aaa
+  border-left: 5px solid #aaa
+  border-right: 8px solid #bbb
+  border-bottom: 10px solid #707070
+  transition: 0.1s
+  outline: none 
+  cursor: pointer
+  &:active
+    border-top: 2px solid #aaa
+    border-left: 4px solid #aaa
+    border-right: 6px solid #bbb
+    border-bottom: 8px solid #707070
+  &:hover
+    box-shadow: 0 0 20px rgba(yellow, 0.5)

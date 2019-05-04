@@ -1,0 +1,120 @@
+.pre
+  h1 你的內心<br>動物靈魂是?
+  h4 狗 貓 鼠 鳥 ?
+.form
+  .qa_wrap.qa1.add
+    h3 問題 1
+    p 食物在什麼時候最美味?
+    button#q
+      .btn
+        span.line
+          label 餓的時候
+            input(type="radio" name="question_1" value="cat")
+    button#q
+      .btn
+        span.line
+          label 想吃的時候
+            input(type="radio" name="question_1" value="dog")
+    button#q
+      .btn
+        span.line
+          label 吃不到的時候
+            input(type="radio" name="question_1" value="mouse")
+    button#q
+      .btn
+        span.line
+          label 有得吃的時候
+            input(type="radio" name="question_1" value="bird")
+  .qa_wrap.qa2
+    h3 問題 2
+    p 光在什麼時候最亮?
+    button#q
+      .btn
+        span.line
+          label 黑夜過後
+            input(type="radio" name="question_2" value="bird")
+    button#q
+      .btn
+        span.line
+          label 有人的時候
+            input(type="radio" name="question_2" value="mouse")
+    button#q
+      .btn
+        span.line
+          label 開燈的時候
+            input(type="radio" name="question_2" value="dog")
+    button#q
+      .btn
+        span.line
+          label 當它被發現的時候
+            input(type="radio" name="question_2" value="cat")
+  .qa_wrap.qa3
+    h3 問題 3
+    p 想放棄的時候你會?
+    button#q
+      .btn
+        span.line
+          label 想死
+            input(type="radio" name="question_3" value="dog")
+    button#q
+      .btn
+        span.line
+          label 馬上放棄
+            input(type="radio" name="question_3" value="cat")
+    button#q
+      .btn
+        span.line
+          label 再多試幾次
+            input(type="radio" name="question_3" value="mouse")
+    button#q
+      .btn
+        span.line
+          label 轉移目標
+            input(type="radio" name="question_3" value="bird")
+  .qa_wrap.qa4
+    h3 問題 4
+    p 往上看，你會看到什麼?
+    button#q
+      .btn
+        span.line
+          label 天花板
+            input(type="radio" name="question_4" value="dog")
+    button#q
+      .btn
+        span.line
+          label 浮雲
+            input(type="radio" name="question_4" value="bird")
+    button#q
+      .btn
+        span.line
+          label 有食物的香味
+            input(type="radio" name="question_4" value="mouse")
+    button#q
+      .btn
+        span.line
+          label 人生的方向
+            input(type="radio" name="question_4" value="cat")
+  .qa_wrap.qa5
+    h3 問題 5
+    p 可以捨棄一切，除了你的?
+    button#show
+      .btn
+        span.line
+          label 生命
+            input(type="radio" name="question_5" value="mouse")
+    button#show
+      .btn
+        label 夥伴
+          input(type="radio" name="question_5" value="dog")
+    button#show
+      .btn
+        span.line
+          label 好心情
+            input(type="radio" name="question_5" value="cat")
+    button#show
+      .btn
+        label 尊嚴
+          input(type="radio" name="question_5" value="bird")
+
+.result 你是:?<br>
+  input.again(type="button" value="再玩一次")
