@@ -95,6 +95,7 @@ button {
   border: 1px solid #d3e3ea;
   position: relative;
   outline: none;
+  cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
