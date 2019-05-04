@@ -78,8 +78,7 @@ var resultArr_1 =[]
 
       ////////  判斷種類  ////////
       //印出兩種 2 2 1 // 印出一種 50 41 32 必贏
-      var two =resultArr_1[0].score==2
-      if (two){
+      if (resultArr_1[0].score==2){
         $(".result").html(
           `<h2>
               你是 ${resultArr_1[0].name} ${resultArr_1[1].name} 人<br>
