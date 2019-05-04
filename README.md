@@ -1,6 +1,7 @@
-## 仿 lol 測驗小遊戲
-星光少女組 [星光測驗](https://events.lol.garena.tw/20160920_StarGuardian/quiz) 
+## 你的動物靈魂小測驗
 
+## 仿 lol 測驗小遊戲
+參考:　星光少女組 [星光測驗](https://events.lol.garena.tw/20160920_StarGuardian/quiz)
 
 ### 重點: 
 
