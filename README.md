@@ -3,7 +3,7 @@
 ### 仿 lol 測驗小遊戲
 參考:　星光少女組 [星光測驗](https://events.lol.garena.tw/20160920_StarGuardian/quiz)
 
-### 重點: 
+### 重點 
 
 - ```button``` 裡的 ```label``` 和最裡面的 ```input[type=radio]``` ，在事件觸發後如何利用 ```event.targrt``` 和 ```element.target``` 取得其 Html 中 attribute 的 value
 - jquery ```$('input[type=radio]').prop("checked", false)``` 取消選擇
