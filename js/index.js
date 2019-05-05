@@ -6,11 +6,11 @@ var changePage=function(){
   i++
   var item = $(".qa_wrap")[i]
   var item_pre = $(".qa_wrap")[i-1]
-  $(item).addClass("add")
-  $(item_pre).removeClass("add")
+  setTimeout( function(){$(item).addClass("add")}, 500 )
+  setTimeout( function(){$(item_pre).delay(500).removeClass("add")}, 500 )
   if(i==5){
       //顯示結果
-      $(".result").addClass("add") 
+      setTimeout( function(){$(".result").addClass("add")}, 500 )
   }
 }
 
@@ -106,7 +106,11 @@ var resultArr_1 =[]
 //再玩一次
 var playAgain = function(){
   console.log("Again!")
-  $(".result").removeClass("add")
+  $(".result").html(`
+  <div style="width:300px; color:white; font-size:30px; padding:10px">
+  ╰( ’·人·)╯ !!!</div>
+  `)
+  setTimeout( function(){$(".result").removeClass("add")}, 500 )
   clearRadioGroup("question_1")
   clearRadioGroup("question_2")
   clearRadioGroup("question_3")
@@ -118,12 +122,6 @@ var playAgain = function(){
 }
 
 //再玩一次 重複按的值TMD不會輸入到 change 裡 -> 原因: 沒歸零 input 成 checked = false (為選取)，故使用 clearRadioGroup(GroupName) 解決
-
-function Clear()
-{    
-   clearRadioGroup("q")
-}
-
 function clearRadioGroup(GroupName)
 {
   var ele = document.getElementsByName(GroupName)
