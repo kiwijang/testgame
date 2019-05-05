@@ -6,11 +6,11 @@ var changePage=function(){
   i++
   var item = $(".qa_wrap")[i]
   var item_pre = $(".qa_wrap")[i-1]
-  setTimeout( function(){$(item).addClass("add")}, 500 )
-  setTimeout( function(){$(item_pre).delay(500).removeClass("add")}, 500 )
+  setTimeout( function(){$(item).addClass("add")}, 400 )
+  setTimeout( function(){$(item_pre).delay(500).removeClass("add")}, 400 )
   if(i==5){
       //顯示結果
-      setTimeout( function(){$(".result").addClass("add")}, 500 )
+      setTimeout( function(){$(".result").addClass("add")}, 400 )
   }
 }
 
@@ -110,7 +110,7 @@ var playAgain = function(){
   <div style="width:300px; color:white; font-size:30px; padding:10px">
   ╰( ’·人·)╯ !!!</div>
   `)
-  setTimeout( function(){$(".result").removeClass("add")}, 500 )
+  setTimeout( function(){$(".result").removeClass("add")}, 400 )
   clearRadioGroup("question_1")
   clearRadioGroup("question_2")
   clearRadioGroup("question_3")
